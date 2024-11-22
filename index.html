@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            background-image: url('https://imgs.search.brave.com/rJr8Pfhsnx5YD0fEfGye8xzwsgB08w1k_uSNi5IyLnM/rs:fit:498:211:1/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/TTM1WTVsWUtseE1B/QUFBQy9nZW5zaGlu/LWltcGFjdC1rYXp1/aGEuZ2lm.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Centered Div Styling */
+        .container {
+            text-align: center;
+        }
+
+        /* Button Styling with Bubble Effect */
+        button {
+            width: 140px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(145deg, rgba(173, 216, 230, 0.7), rgba(135, 206, 235, 0.7));
+            box-shadow: 0 8px 15px rgba(135, 206, 235, 0.5), inset 0 -3px 6px rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Effect */
+        button:hover {
+            background: linear-gradient(145deg, rgba(135, 206, 250, 0.9), rgba(173, 216, 230, 0.9));
+            box-shadow: 0 10px 20px rgba(135, 206, 250, 0.7), inset 0 -5px 8px rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        /* Link Styling */
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
-<style>
-    body{
-        background-image: url('https://imgs.search.brave.com/rJr8Pfhsnx5YD0fEfGye8xzwsgB08w1k_uSNi5IyLnM/rs:fit:498:211:1/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/TTM1WTVsWUtseE1B/QUFBQy9nZW5zaGlu/LWltcGFjdC1rYXp1/aGEuZ2lm.gif');
-        background-repeat: no-repeat, repeat;
-        background-position: center;
-        background-size: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 650px ;
-        margin-bottom: 40px;
-    }
-    button{
-        width: 100px;
-        height: 35px;
-        border-radius: 10px;
-        font-size: 18px;
-        padding: 3px;
-        background-color: lightblue;
-    }
-    button:hover{
-        background-color: white;
-        cursor: pointer;
-    }
-    
-</style>
 <body>
-    <div><a href="./tribute/tribute.html"><button>Dive in</button></a></div>
+    <div class="container">
+        <a href="./tribute/tribute.html"><button>Dive In</button></a>
+    </div>
 </body>
 </html>
